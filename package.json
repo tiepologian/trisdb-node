@@ -1,0 +1,22 @@
+{
+  "name": "trisdb-node",
+  "version": "0.0.0",
+  "description": "The Node interface to TrisDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tiepologian/trisdb-node.git"
+  },
+  "keywords": [
+    "node",
+    "trisdb"
+  ],
+  "author": "Gianluca Tiepolo <tiepolo.gian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiepologian/trisdb-node/issues"
+  }
+}

@@ -1,0 +1,13 @@
+
+É
+message.proto"0
+QueryRequest
+query (	
+	timestamp (	"…
+QueryResponse#
+data (2.QueryResponse.Record
+	timestamp (	<
+Record
+subject (	
+	predicate (	
+object (	
