@@ -1,9 +1,10 @@
 var fs = require("fs");
+var path = require("path");
 var net = require('net');
 var p = require("node-protobuf");
 var mod = module.exports;
 
-var pb = new p(fs.readFileSync("proto.desc")) ;
+var pb = new p(fs.readFileSync(path.dirname(module.filename)+"/proto.desc"));
 
 function writeInt(stream, int){
    var bytes = new Array(4)
