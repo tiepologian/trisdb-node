@@ -1,15 +1,13 @@
 var trisdb = require('trisdb-node');
 
 
-trisdb.get("*", "*", "*", function(data) {
-    console.log("GET result: " + data);
+// Add a record to the database
+trisdb.create("Gianluca", "loves", "Pizza", function(data) {
+    // done
 });
 
-trisdb.create("bubu", "loves", "cucci", function(data) {
-    console.log("CREATE result: " + data);
-});
-
+// Execute a GET query
 trisdb.get("*", "*", "*", function(data) {
-    console.log("2nd GET result: " + data);
+    console.log("Query result: " + data);
 });
 
