@@ -16,3 +16,18 @@ trisdb.get("*", "*", "*", function(err, data) {
 	console.log("Query result: " + data);
     }
 });
+
+// Add another record
+trisdb.create("Marco", "loves", "Pizza", function(err) {
+    if(err) console.log("Error creating record");
+});
+
+// DELETE a record
+trisdb.delete("Gianluca", "*", "*", function(err) {
+    if(err) console.log("Error deleting record");
+});
+
+// CLEAR database
+trisdb.clear(function(err) {
+    // db should be empty now
+});

@@ -62,3 +62,15 @@ mod.get = function(s, p, o, cb) {
         cb(err, data);
     });
 }
+
+mod.delete = function(s, p, o, cb) {
+    sendCommand('DELETE "'+s+'" "'+p+'" "'+o+'"', function(err, data) {
+        cb(err);
+    });
+}
+
+mod.clear = function(cb) {
+    sendCommand('CLEAR', function(err, data) {
+        cb(err);
+    });
+}
